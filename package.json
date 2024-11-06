@@ -1,0 +1,39 @@
+{
+  "name": "@commonxyz/api-client",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Common Client Proxy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hicommonwealth/api-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hicommonwealth/api-client/issues"
+  },
+  "homepage": "https://github.com/hicommonwealth/api-client#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "default": "./src/index.js"
+    }
+  },
+  "scripts": {},
+  "keywords": [
+    "commonwealth",
+    "dao",
+    "community",
+    "crypto",
+    "forum"
+  ],
+  "author": "common.xyz",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "url-join": "^5.0.0"
+  }
+}
