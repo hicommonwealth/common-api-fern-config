@@ -1,0 +1,31 @@
+name: Publish Typescript SDK
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  FERN_TOKEN: ${{ secrets.FERN_TOKEN }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "The version of the SDK to release"
+        required: true
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Fern CLI
+        run: npm install -g fern-api
+
+      - name: Refresh OpenAPI spec
+        run: fern api update
+
+      - name: Publish Typescript SDK
+        run: fern generate --group ts-sdk --log-level debug --version ${{ inputs.version }}
+
+      - name: Publish API Docs
+        run: fern generate --docs --group ts-sdk --log-level debug --version ${{ inputs.version }}
