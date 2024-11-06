@@ -25,4 +25,5 @@ groups:
         config:
           outputEsm: true
 api:
-  path: ../openapi.json
+  path: openapi/openapi.json
+  origin: https://commonwealth.im/api/v1/openapi.json
