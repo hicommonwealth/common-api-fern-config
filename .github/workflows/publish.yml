@@ -28,4 +28,4 @@ jobs:
         run: fern generate --group ts-sdk --log-level debug --version ${{ inputs.version }}
 
       - name: Publish API Docs
-        run: fern generate --docs --group ts-sdk --log-level debug --version ${{ inputs.version }}
+        run: fern generate --docs --log-level debug --version ${{ inputs.version }}
