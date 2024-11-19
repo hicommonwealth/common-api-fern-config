@@ -18,7 +18,7 @@ groups:
           package-name: "@commonxyz/api-client"
           token: ${NPM_TOKEN}
         github:
-          repository: hicommonwealth/api-client
+          repository: hicommonwealth/common-ts-client
         metadata:
           license: MIT
           package-description: Common Client Proxy
