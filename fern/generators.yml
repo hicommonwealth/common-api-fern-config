@@ -24,6 +24,7 @@ groups:
           package-description: Common Client Proxy
         config:
           outputEsm: true
+          noSerdeLayer: true
 api:
   path: openapi/openapi.json
   origin: https://commonwealth.im/api/v1/openapi.json
