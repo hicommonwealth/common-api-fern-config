@@ -26,5 +26,5 @@ groups:
           noSerdeLayer: true
 api:
   specs:
-    - openapi: "./openapi.json"
+    - openapi: "./openapi/openapi.json"
       origin: https://commonwealth.im/api/v1/openapi.json
